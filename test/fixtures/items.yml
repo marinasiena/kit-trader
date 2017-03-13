@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type: 
+  color: MyString
+  size: MyString
+  number: 1
+  personalize: false
+  season: MyString
+  condition: MyString
+  comment: MyString
+
+two:
+  name: MyString
+  type: 
+  color: MyString
+  size: MyString
+  number: 1
+  personalize: false
+  season: MyString
+  condition: MyString
+  comment: MyString
