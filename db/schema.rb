@@ -18,38 +18,27 @@ ActiveRecord::Schema.define(version: 2017031304) do
   create_table "clubs", force: :cascade do |t|
     t.string   "name"
     t.string   "location"
-    t.integer  "items_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["items_id"], name: "index_clubs_on_items_id", using: :btree
   end
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
+    t.string   "league"
     t.string   "item_type"
     t.string   "color"
     t.string   "size"
     t.integer  "number"
-    t.boolean  "personalize"
+    t.boolean  "personalized"
     t.string   "season"
     t.string   "condition"
     t.string   "comment"
     t.integer  "user_id"
-    t.integer  "league_id"
     t.integer  "club_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.index ["club_id"], name: "index_items_on_club_id", using: :btree
-    t.index ["league_id"], name: "index_items_on_league_id", using: :btree
     t.index ["user_id"], name: "index_items_on_user_id", using: :btree
-  end
-
-  create_table "leagues", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "clubs_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["clubs_id"], name: "index_leagues_on_clubs_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -84,6 +73,5 @@ ActiveRecord::Schema.define(version: 2017031304) do
   end
 
   add_foreign_key "items", "clubs", on_delete: :cascade
-  add_foreign_key "items", "leagues", on_delete: :cascade
   add_foreign_key "items", "users", on_delete: :cascade
 end
