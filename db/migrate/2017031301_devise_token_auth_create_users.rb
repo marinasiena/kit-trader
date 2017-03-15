@@ -38,7 +38,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[5.0]
       t.string :email
       t.string :phone
       t.string :image
-      t.references :items
+      t.references :kits
 
       ## Tokens
       t.json :tokens
