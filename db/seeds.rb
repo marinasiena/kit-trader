@@ -65,6 +65,18 @@ Item.create!([
   {id: 13, kit_id: 5, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."},
   {id: 14, kit_id: 6, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor", comment: "These comments are probably the best comments that a product has ever had."},
   {id: 15, kit_id: 6, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New", comment: "These comments are probably the best comments that a product has ever had."},
-  {id: 16, kit_id: 6, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."}
+  {id: 16, kit_id: 6, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 17, kit_id: 7, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 18, kit_id: 7, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 19, kit_id: 7, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 20, kit_id: 8, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 21, kit_id: 8, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 22, kit_id: 8, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 23, kit_id: 9, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 24, kit_id: 9, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 25, kit_id: 9, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 26, kit_id: 10, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 27, kit_id: 10, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New", comment: "These comments are probably the best comments that a product has ever had."},
+  {id: 28, kit_id: 10, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair", comment: "These comments are probably the best comments that a product has ever had."}
 
 ])

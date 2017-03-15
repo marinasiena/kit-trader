@@ -6,12 +6,17 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    render
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    def to_builder
+      Jbuilder.new do |user|
+        @user.(self, :name, :email, :phone, :image)
+      end
+    end
   end
 
   # GET /users/new

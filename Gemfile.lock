@@ -197,7 +197,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise_token_auth
-  jbuilder (~> 2.5)
+  jbuilder
   jquery-rails
   listen (~> 3.0.5)
   omniauth

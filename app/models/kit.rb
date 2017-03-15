@@ -8,5 +8,6 @@ class Kit < ApplicationRecord
   validates_format_of :zip_code, :with => /\A(\d{5})\D?(\d{4})?\z/, :on => :create
 
   belongs_to :user
+  has_many :items
 
 end
