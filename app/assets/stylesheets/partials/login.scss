@@ -1,0 +1,39 @@
+.login-section {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    clear: both;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+
+    form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button {
+        background-color: $silver;
+        border-radius: 10px;
+        color: $black;
+        display: block;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 20px auto;
+        text-align: center;
+        width: 200px;
+
+        img {
+            display: block;
+            height: 100px;
+            margin: 0 auto;
+            padding: 5px;
+            width: 100px;
+        }
+
+        &:hover {
+            background-color: lighten($green, 20%);
+            color: $black;
+        }
+    }
+}

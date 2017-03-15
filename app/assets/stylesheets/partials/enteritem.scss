@@ -1,0 +1,79 @@
+
+.enter-item-section {
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.item-wrapper {
+  display: flex;
+    form {
+        margin: 20px 15px;
+        color: $silver;
+
+        button,
+        input,
+        label,
+        option,
+        select,
+        textarea {
+            padding: 5px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
+
+        label {
+            background-color: $dkgreen;
+        }
+
+        textarea {
+            width: 600px;
+            height: 60px;
+        }
+    }
+
+    div {
+        display: block;
+        padding: 10px 0;
+    }
+
+    button {
+        width: 150px;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: $green;
+        color: $silver;
+
+        &:hover {
+            background-color: lighten($green, 20%);
+            color: $black;
+        }
+    }
+}
+.uniform-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+      padding: 10px;
+    }
+
+    img {
+        padding: 20px;
+        max-height: 500px;
+    }
+}
+
+
+
+.enter-item-form-file {
+    max-width: 280px;
+}
+
+.enter-item-form-number {
+    width: 50px;
+}

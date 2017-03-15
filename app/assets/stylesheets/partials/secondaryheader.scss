@@ -1,0 +1,26 @@
+.secondary-header {
+  width: 100%;
+  height: 90px;
+  background-color: $green;
+  border-bottom: 25px solid black;
+  img {
+    width: 425px;
+    padding: 8px 20px;
+  }
+}
+.site-nav {
+  float: right;
+  ul {
+    display: flex;
+    li {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-transform: uppercase;
+      &:hover {
+        color: $black;
+        background-color: lighten($green, 20%);
+      }
+    }
+  }
+}

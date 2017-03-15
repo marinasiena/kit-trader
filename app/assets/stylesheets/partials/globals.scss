@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+}
+body {
+    background: $dkgreen;
+    color: $white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    background-color: $dkgreen;
+    border-top: 2px solid black;
+}
+
+main {
+    background: url('/img/grass.jpg') no-repeat center center;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+  color: $gold;
+    font-size: 2rem;
+}
+
+h3 {
+    color: $gold;
+    font-weight: 700;
+}
+
+footer {
+    background-color: $black;
+    color: $white;
+    height: 75px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+}
