@@ -20,7 +20,6 @@ section {
 main {
     background: url('/img/grass.jpg') no-repeat center center;
     height: 100%;
-    overflow: hidden;
 }
 
 h1 {
@@ -41,7 +40,6 @@ h3 {
 footer {
     background-color: $black;
     color: $white;
-    height: 75px;
     position: fixed;
     bottom:0;
     width: 100%;

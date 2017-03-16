@@ -32,7 +32,7 @@
         }
 
         &:hover {
-            background-color: lighten($green, 20%);
+            background-color: $gold;
             color: $black;
         }
     }
