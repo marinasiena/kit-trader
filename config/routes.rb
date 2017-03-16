@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  root 'site#index'
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  mount_devise_token_auth_for 'User', at: 'auth'
+  resources :sessions, only: [:create, :destroy]
+  resource :site, only: [:show]
+
   resources :clubs
   resources :users
   resources :kits
   resources :items
 
+  root 'site#index'
 end

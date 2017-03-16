@@ -5,18 +5,20 @@ class KitsController < ApplicationController
   def index
     @kits = Kit.all
 
-    render
   end
 
   # GET /kits/1
   # GET /kits/1.json
   def show
+    @kit = Kit.find(params[:id])
+
     def to_builder
       Jbuilder.new do |kit|
-        @kit.(self, :trans_type, :price, :zip_code, :league, :season)
+        @kit.(self, :trans_type, :price, :zip_code, :league, :season, :comment)
       end
     end
   end
+
   # GET /kits/new
   def new
     @kit = Kit.new
@@ -43,6 +45,8 @@ class KitsController < ApplicationController
   # PATCH/PUT /kits/1
   # PATCH/PUT /kits/1.json
   def update
+    @kit = Kit.find(params[:id])
+
     respond_to do |format|
       if @kit.update(kit_params)
         format.json { render :show, status: :ok, location: @kit }
@@ -55,9 +59,10 @@ class KitsController < ApplicationController
   # DELETE /kits/1
   # DELETE /kits/1.json
   def destroy
+    @kit = Kit.find(params[:id])
+
     @kit.destroy
-    respond_to do |format|
-    end
+    head :no_content
   end
 
   private
@@ -68,6 +73,6 @@ class KitsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kit_params
-      params.require(:kit).permit(:trans_type, :price, :zip_code, :league, :season)
+      params.require(:kit).permit(:trans_type, :price, :zip_code, :league, :season, :comment)
     end
 end

@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2017031304) do
     t.integer  "number"
     t.string   "color"
     t.string   "condition"
-    t.string   "comment"
     t.integer  "kit_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -45,6 +44,7 @@ ActiveRecord::Schema.define(version: 2017031304) do
     t.integer  "zip_code"
     t.string   "league"
     t.string   "season"
+    t.string   "comment"
     t.integer  "user_id"
     t.integer  "club_id"
     t.datetime "created_at", null: false
@@ -54,34 +54,18 @@ ActiveRecord::Schema.define(version: 2017031304) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "provider",               default: "email", null: false
-    t.string   "uid",                    default: "",      null: false
-    t.string   "encrypted_password",     default: "",      null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,       null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.string   "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string   "unconfirmed_email"
+    t.string   "provider"
+    t.string   "uid"
     t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
     t.string   "email"
     t.string   "phone"
     t.string   "image"
     t.integer  "kits_id"
-    t.json     "tokens"
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
-    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
-    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
     t.index ["kits_id"], name: "index_users_on_kits_id", using: :btree
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-    t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true, using: :btree
   end
 
   add_foreign_key "items", "kits", on_delete: :cascade

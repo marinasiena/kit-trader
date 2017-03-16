@@ -6,12 +6,13 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    @user = User.find(params[:id])
+
     def to_builder
       Jbuilder.new do |user|
         @user.(self, :name, :email, :phone, :image)
@@ -45,6 +46,8 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    @user = User.find(params[:id])
+
     respond_to do |format|
       if @user.update(user_params)
         format.json { render :show, status: :ok, location: @user }
@@ -57,9 +60,10 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    @user = User.find(params[:id])
+
     @user.destroy
-    respond_to do |format|
-    end
+    head :no_content
   end
 
   private

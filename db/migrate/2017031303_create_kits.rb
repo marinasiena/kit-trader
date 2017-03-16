@@ -6,6 +6,7 @@ class CreateKits < ActiveRecord::Migration[5.0]
       t.integer :zip_code
       t.string :league
       t.string :season
+      t.string :comment
       t.references :user, index: true, foreign_key: {on_delete: :cascade}
       t.references :club, index: true, foreign_key: {on_delete: :cascade}
 

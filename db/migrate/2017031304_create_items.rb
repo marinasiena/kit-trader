@@ -6,7 +6,6 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.integer :number
       t.string :color
       t.string :condition
-      t.string :comment
       t.references :kit, index: true, foreign_key: {on_delete: :cascade}
 
       t.timestamps

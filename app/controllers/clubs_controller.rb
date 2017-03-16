@@ -9,6 +9,8 @@ class ClubsController < ApplicationController
   # GET /clubs/1
   # GET /clubs/1.json
   def show
+    @club = Club.find(params[:id])
+
     def to_builder
       Jbuilder.new do |club|
         @club.(self, :long_name, :short_name, :location, :image)
@@ -41,6 +43,8 @@ class ClubsController < ApplicationController
   # PATCH/PUT /clubs/1
   # PATCH/PUT /clubs/1.json
   def update
+    @club = Club.find(params[:id])
+
     respond_to do |format|
       if @club.update(club_params)
         format.json { render :show, status: :ok, location: @club }
@@ -53,9 +57,10 @@ class ClubsController < ApplicationController
   # DELETE /clubs/1
   # DELETE /clubs/1.json
   def destroy
+    @club = Club.find(params[:id])
+
     @club.destroy
-    respond_to do |format|
-    end
+    head :no_content
   end
 
   private
