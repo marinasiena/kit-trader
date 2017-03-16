@@ -1,50 +1,82 @@
 User.delete_all
-Item.delete_all
 Club.delete_all
+Kit.delete_all
+Item.delete_all
 
 User.create!([
-  {id: 1, name: "Firsty Firsterson", email: "first@testemail.com", password: "123appletree", phone: "1112223333", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
-  {id: 2, name: "Secondy Secondton", email: "second@testemail.com", password: "123appletree", phone: "2223334444", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
-  {id: 3, name: "Thirdy McThirdster", email: "third@testemail.com", password: "123appletree", phone: "3334445555", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
-  {id: 4, name: "Fourthson Fourthwright", email: "fourth@testemail.com", password: "123appletree", phone: "4445556666", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
-  {id: 5, name: "Fifth Fifthenalia", email: "fifth@testemail.com", password: "123appletree", phone: "5556667777", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"}
+  {name: "Firsty Firsterson", email: "first@testemail.com", phone: "1112223333", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
+  {name: "Secondy Secondton", email: "second@testemail.com", phone: "2223334444", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
+  {name: "Thirdy McThirdster", email: "third@testemail.com", phone: "3334445555", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
+  {name: "Fourthson Fourthwright", email: "fourth@testemail.com", phone: "4445556666", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
+  {name: "Fifth Fifthenalia", email: "fifth@testemail.com", phone: "5556667777", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"}
 ])
 
 Club.create!([
-  {id: 1, name: "CASL | Capital Area SL", location: "27513"},
-  {id: 2, name: "CSL | Chatham SL", location: "27602"},
-  {id: 3, name: "EWSA | East Wake SA", location: "27545"},
-  {id: 4, name: "GCAA | Greater Cleveland AA", location: "27604"},
-  {id: 5, name: "NCFC | North Carolina FC Youth", location: "27608"},
-  {id: 6, name: "SASL | Sanford Area SL", location: "27635"},
-  {id: 7, name: "TFCA | Triangle Futbol Club Alliance", location: "27650"},
-  {id: 8, name: "TUSA | Triangle United SA", location: "27698"},
-  {id: 9, name: "TUSA-WakeFC | TriangleUnited/WakeFC", location: "27676"},
-  {id: 10, name: "TUSA-XL | TriangleUnited/XL Soccer", location: "27690"},
-  {id: 11, name: "ACS | AC Sandhills", location: "27614"},
-  {id: 12, name: "FSC | Fayetteville SC", location: "27615"},
-  {id: 13, name: "JUSA | Johnston United SA", location: "27692"},
-  {id: 14, name: "BSC | Burlington SC", location: "27517"},
-  {id: 15, name: "CCSC | Central Carolina SC", location: "27702"},
-  {id: 16, name: "GUSA | Greensboro United SC", location: "27705"},
-  {id: 17, name: "KSA | Kernersville SC", location: "27711"},
-  {id: 18, name: "NCSF | NC Soccer Fusion", location: "27713"},
-  {id: 19, name: "NCUSA | NC United SA", location: "27707"},
-  {id: 20, name: "PTFC | Piedmont Triad Futbol Club", location: "27601"},
-  {id: 21, name: "TCYSA | Twin City Youth SA", location: "27656"},
-  {id: 22, name: "URYSA | United Rockingham Youth SA", location: "27607"},
-  {id: 23, name: "other | other club not listed", location: "27697"}
+  {long_name: "Capital Area SL", short_name: "CASL", location: "27513", image: "img/clublogos/acs.png"},
+  {long_name: "Chatham SL", short_name: "CSL", location: "27602", image: "img/clublogos/acs.png"},
+  {long_name: "East Wake SA", short_name: "EWSA", location: "27545", image: "img/clublogos/acs.png"},
+  {long_name: "Greater Cleveland AA", short_name: "GCAA", location: "27604", image: "img/clublogos/acs.png"},
+  {long_name: "North Carolina FC Youth", short_name: "NCFC", location: "27608", image: "img/clublogos/acs.png"},
+  {long_name: "Sanford Area SL", short_name: "SASL", location: "27635", image: "img/clublogos/acs.png"},
+  {long_name: "Triangle Futbol Club Alliance", short_name: "TFCA", location: "27650", image: "img/clublogos/acs.png"},
+  {long_name: "Triangle United SA", short_name: "TUSA", location: "27698", image: "img/clublogos/acs.png"},
+  {long_name: "TriangleUnited/WakeFC", short_name: "TUSA-WakeFC", location: "27676", image: "img/clublogos/acs.png"},
+  {long_name: "TriangleUnited/XL Soccer", short_name: "TUSA-XL", location: "27690", image: "img/clublogos/acs.png"},
+  {long_name: "AC Sandhills", short_name: "ACS", location: "27614", image: "img/clublogos/acs.png"},
+  {long_name: "Fayetteville SC", short_name: "FSC", location: "27615", image: "img/clublogos/acs.png"},
+  {long_name: "Johnston United SA", short_name: "JUSA", location: "27692", image: "img/clublogos/acs.png"},
+  {long_name: "Burlington SC", short_name: "BSC", location: "27517", image: "img/clublogos/acs.png"},
+  {long_name: "Central Carolina SC", short_name: "CCSC", location: "27702", image: "img/clublogos/acs.png"},
+  {long_name: "Greensboro United SC", short_name: "GUSA", location: "27705", image: "img/clublogos/acs.png"},
+  {long_name: "Kernersville SC", short_name: "KSA", location: "27711", image: "img/clublogos/acs.png"},
+  {long_name: "NC Soccer Fusion", short_name: "NCSF", location: "27713", image: "img/clublogos/acs.png"},
+  {long_name: "NC United SA", short_name: "NCUS", location: "27707", image: "img/clublogos/acs.png"},
+  {long_name: "Piedmont Triad Futbol Club", short_name: "PTFC", location: "27601", image: "img/clublogos/acs.png"},
+  {long_name: "Twin City Youth SA", short_name: "TCYS", location: "27656", image: "img/clublogos/acs.png"},
+  {long_name: "United Rockingham Youth SA", short_name: "URYS", location: "27607", image: "img/clublogos/acs.png"},
+  {long_name: "other club not listed", short_name: "other", location: "27697", image: "img/clublogos/acs.png"}
+])
+
+Kit.create!([
+  {user_id: 1, club_id: 1, trans_type: "sell", price: "15", zip_code: "27624", league: "Recreation", season: "2015", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 1, club_id: 10, trans_type: "sell", price: "25", zip_code: "27624", league: "Academy", season: "2015", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 2, club_id: 12, trans_type: "trade", price: "", zip_code: "27625", league: "Classic", season: "2016", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 2, club_id: 2, trans_type: "want", price: "", zip_code: "27625", league: "Challenge", season: "2016", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 3, club_id: 13, trans_type: "trade", price: "", zip_code: "27626", league: "Academy", season: "2016", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 3, club_id: 17, trans_type: "sell", price: "45", zip_code: "27627", league: "Challenge", season: "2015", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 4, club_id: 4, trans_type: "donate", price: "", zip_code: "27628", league: "Select", season: "2016", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 4, club_id: 19, trans_type: "want", price: "", zip_code: "27628", league: "Classic", season: "2017", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 5, club_id: 5, trans_type: "sell", price: "50", zip_code: "27629", league: "Challenge", season: "2016", comment: "These comments are probably the best comments that a product has ever had."},
+  {user_id: 5, club_id: 22, trans_type: "sell", price: "10", zip_code: "27624", league: "Challenge", season: "2017", comment: "These comments are probably the best comments that a product has ever had."}
 ])
 
 Item.create!([
-  {id: 1, user_id: 1, club_id: 1, league: "Recreation", name: "Like New Jersey", item_type: "Jersey", color: "Gold", size: "YL", number: "4", personalized: true, comment: "These comments are probably the best comments that a product has ever had.", condition: "Used | good"},
-  {id: 2, user_id: 1, club_id: 10, league: "Academy", name: "my sons shorts", item_type: "Shorts", color: "Light Green", size: "YM", number: "00", personalized: true, comment: "These comments are probably the best comments that a product has ever had.", condition: "New"},
-  {id: 3, user_id: 2, club_id: 12, league: "Classic", name: "classic jersey 4 sale", item_type: "Jersey", color: "Gold", size: "YL", number: "6", personalized: false, comment: "These comments are probably the best comments that a product has ever had.", condition: "Used | poor"},
-  {id: 4, user_id: 2, club_id: 2, league: "Challenge", name: "Chatham Challenge Shorts", item_type: "Shorts", color: "Cyan", size: "YS", number: "13", personalized: false, comment: "These comments are probably the best comments that a product has ever had.", condition: "New"},
-  {id: 5, user_id: 3, club_id: 13, league: "Academy", name: "JUSA Jacket Ladies Small", item_type: "Warmup Jacket", color: "Green", size: "LS", number: "7", personalized: true, comment: "These comments are probably the best comments that a product has ever had.", condition: "Used | fair"},
-  {id: 6, user_id: 3, club_id: 17, league: "Challenge", name: "Medium Shorts (Silver)", item_type: "Shorts", color: "Silver", size: "YM", number: "18", personalized: false, comment: "These comments are probably the best comments that a product has ever had.", condition: "New"},
-  {id: 7, user_id: 4, club_id: 4, league: "Select", name: "Cleveland XL Jersey", item_type: "Jersey", color: "Blue", size: "XL", number: "4", personalized: false, comment: "These comments are probably the best comments that a product has ever had.", condition: "New"},
-  {id: 8, user_id: 4, club_id: 19, league: "Classic", name: "ncu shirt", item_type: "Jersey", color: "Navy", size: "YXL", number: "3", personalized: true, comment: "These comments are probably the best comments that a product has ever had.", condition: "Used | poor"},
-  {id: 9, user_id: 5, club_id: 5, league: "Challenge", name: "Pants", item_type: "Warmup Pants", color: "Orange", size: "YM", number: "12", personalized: false, comment: "These comments are probably the best comments that a product has ever had.", condition: "Like New"},
-  {id: 10, user_id: 5, club_id: 22, league: "Academy", name: "New pair of socks", item_type: "Socks", color: "Yellow", size: "YS", number: "", personalized: false, comment: "These comments are probably the best comments that a product has ever had.", condition: "New"}
+  {kit_id: 1, item_type: "Jersey", size: "YS", number: "10", color: "Gold", condition: "Used | good"},
+  {kit_id: 1, item_type: "Shorts", size: "YS", number: "10", color: "Light Green", condition: "New"},
+  {kit_id: 2, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 2, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 2, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"},
+  {kit_id: 3, item_type: "Shorts", size: "LL", number: "7", color: "Silver", condition: "New"},
+  {kit_id: 2, item_type: "Jersey", size: "YS", number: "5", color: "Blue", condition: "New"},
+  {kit_id: 4, item_type: "Jersey", size: "YM", number: "24", color: "Navy", condition: "Used | poor"},
+  {kit_id: 4, item_type: "Warmup Pants", size: "YL", number: "24", color: "Orange", condition: "Like New"},
+  {kit_id: 4, item_type: "Socks", size: "", number: "", color: "Yellow", condition: "New"},
+  {kit_id: 5, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 5, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 5, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"},
+  {kit_id: 6, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 6, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 6, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"},
+  {kit_id: 7, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 7, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 7, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"},
+  {kit_id: 8, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 8, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 8, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"},
+  {kit_id: 9, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 9, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 9, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"},
+  {kit_id: 10, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
+  {kit_id: 10, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
+  {kit_id: 10, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"}
 ])
