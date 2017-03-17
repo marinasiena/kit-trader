@@ -1,8 +1,10 @@
 .site-header {
     background: url('/img/grass.jpg') no-repeat center center;
+    background-size: cover;
     border-bottom: 10px solid black;
     text-align: center;
     width: 100%;
+    top: 0;
 }
 
 .logo-container {

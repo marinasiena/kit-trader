@@ -5,12 +5,11 @@
   <title>kit-trader | upcycling uniforms NEW</title>
   <meta name="viewport" content="width=device-width" initial-scale="1">
   <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900" rel="stylesheet"> -->
-  <!-- <link rel=stylesheet type="text/css" href="./main.css"> -->
 </head>
 
 <body>
 
-  <header class='site-header'>
+  <header class='site-header is-hidden'>
     <div class='logo-container'>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454 97.53">
         <polygon class="logo-arrow" points="102.09 49.89 178.22 49.89 178.22 62.03 197.18 46.03 178.22 30.03 178.22 42.17 102.09 42.17 102.09 49.89"/>
@@ -56,7 +55,7 @@
 
   </header>
 
-  <div class='club-logos'>
+  <div class='club-logos is-hidden'>
     <img src='img/clublogos/acs.png' alt='acs logo' />
     <img src='img/clublogos/bsc.png' alt='bsc logo' />
     <img src='img/clublogos/casl.png' alt='casl logo' />
@@ -75,7 +74,7 @@
 
   <main class='site-content'>
 
-    <section class='about-section'>
+    <section class='about-section is-hidden'>
       <img src='img/nouniform.png' />
       <div class='about-wrapper'>
         <h1 class='about-h1'>Kit-trader upcycles uniforms.</h1>
@@ -105,16 +104,15 @@
       </nav>
     </header>
 
-    <section class='login-section'>
+    <section class='login-section is-hidden'>
       <h3>Please login<img src='img/logowide.svg' alt='kit-trader' /></h3>
       <form form='login-form' type='submit'>
-        <a href='/auth/facebook'><button type='submit'>Login with Facebook<img src='img/fbook.svg' alt='facebook icon' /></button></a>
-        <a href='/auth/google_oauth2'><button type='submit'>Login with Google<img src='img/google.svg' alt='google icon' /></button></a>
+        <a href='/auth/facebook'>Login with Facebook<img src='img/fbook.svg' alt='facebook icon' /></a>
+        <a href='/auth/google_oauth2'>Login with Google<img src='img/google.svg' alt='google icon' /></a>
       </form>
     </section>
 
-
-    <section class='kit-builder-section'>
+    <section class='kit-builder-section is-hidden'>
 
       <div class='kit-builder-title-wrapper'>
         <img src='img/kitbuilder.svg' alt='kit builder logo' />
@@ -216,12 +214,12 @@
               <input class='kit-phone' type='tel' />
             </div>
 
-            <div class='kit-form-line'>
+            <!-- <div class='kit-form-line'>
 
               <label for='file'>Do you want to include a kit picture?</label>
               <input type='file' class='kit-pic' name='file' />
 
-            </div>
+            </div> -->
 
             <textarea maxlength='100' placeholder='Briefly describe any specifics about your item.'></textarea>
 
@@ -300,6 +298,10 @@
         <option value='poor'>Used poor</option>
       </select>
 
+              <label for 'item-price'>Item price $</label>
+              <input class='item-price' type='number' min='0' max='99' />
+
+
             </div>
 
             <button type='submit'>Add item</button>
@@ -315,55 +317,64 @@
 
         <div class='kit-display-wrapper'>
           <img class='club-logo' src='img/clublogos/tfca.png' alt='club logo' />
-          <h3>Jersey For Sale | $20</h3>
-          <h4>Club:  TFCA | Classic</h4>
+          <h3>Kit For Sale | $50</h3>
+          <h4>TFCA | Classic | 2015-2016</h4>
+
+
           <div class='item-detail-wrapper'>
-            <p>23</p>
-            <img class='item-detail' src='img/jersey.svg' alt='uniform builder' />
+            <article class='item-detail'>
+              <img src='img/jersey.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p>YL | $20</p>
+            </article>
+            <article class='item-detail'>
+              <img src='img/jacket.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p>YL | $20</p>
+            </article>
+            <article class='item-detail'>
+              <img src='img/gloves.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p>YL | $20</p>
+            </article>
+
+            <article class='item-detail'>
+              <img src='img/shoes.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p> sz4 | $20</p>
+            </article>
+            <article class='item-detail'>
+              <img src='img/socks.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p>youth | $20</p>
+            </article>
+            <article class='item-detail'>
+              <img src='img/shorts.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p>YL | $20</p>
+            </article>
+            <article class='item-detail'>
+              <img src='img/pants.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p>YL | $20</p>
+            </article>
+            <article class='item-detail'>
+              <img src='img/ball.svg' alt='kit-item-display' />
+              <p>Like New</p>
+              <p> sz4 | $20</p>
+            </article>
+
           </div>
-          <p>Size: YL | Season: 2015-2016</p>
-          <p>Condition: Like New</p>
-          <p class='comment'>this is a lot of text about the item. lets see what happens when I reach 100 characters. This is a</p>
-          <p>Posted by: Gladys Jennings</p>
-          <p>Email Gladys</p>
-        </div>
+          <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
+          <footer class='kit-display-footer'>
+            <h4>27712 | Vallyre Hyers</h4>
+            <h4>Contact me via email</h4>
+          </footer>
 
-      </div>
-
-      <article class='kit-detail-wrapper'>
-        <h4>Your kit contains</h4>
-        <div class='kit-item'>
-          <img src='img/jersey.svg' alt='kit-item-display' />
         </div>
-        <div class='kit-item'>
-          <img src='img/jacket.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/pants.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/shinguards.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/shorts.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/ball.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/gloves.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/shoes.svg' alt='kit-item-display' />
-        </div>
-        <div class='kit-item'>
-          <img src='img/socks.svg' alt='kit-item-display' />
-        </div>
-      </article>
-
     </section>
 
-    <section class='view-items-section is-hidden'>
+    <section class='view-items-section'>
       <h2>Search for Items <span>| filter results and sort results by clicking on table headings</span></h2>
       <div class='view-items-wrapper'>
         <img class='googlemap' src='img/googlemap.png' />

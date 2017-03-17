@@ -13,12 +13,12 @@ body {
 }
 
 section {
-    background-color: $dkgreen;
     border-top: 2px solid black;
 }
 
 main {
-    background: url('/img/grass.jpg') no-repeat center center;
+    background: url('/img/grass.jpg') repeat center center;
+    background-size: cover;
     height: 100%;
 }
 
@@ -40,8 +40,7 @@ h3 {
 footer {
     background-color: $black;
     color: $white;
-    position: fixed;
-    bottom:0;
     width: 100%;
+    clear: both;
     text-align: center;
 }

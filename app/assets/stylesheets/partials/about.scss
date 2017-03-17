@@ -1,15 +1,15 @@
 .about-section {
     background-color: $dkgreen;
     color: $white;
-    overflow: hidden;
     text-align: center;
     width: 100%;
+    overflow: hidden;
     border-bottom: 10px solid black;
 
     img {
         float: left;
-        height: auto;
         width: 30%;
+        padding: 20px;
     }
 
     h1 {
