@@ -2,6 +2,8 @@ User.delete_all
 Club.delete_all
 Kit.delete_all
 Item.delete_all
+Conversation.delete_all
+Message.delete_all
 
 User.create!([
   {name: "Firsty Firsterson", email: "first@testemail.com", phone: "1112223333", image: "https://cdn3.iconfinder.com/data/icons/line-icons-large-version/64/id-card-512.png"},
@@ -79,4 +81,17 @@ Item.create!([
   {kit_id: 10, item_type: "Jersey", size: "YL", number: "14", color: "Gold", condition: "Used | poor"},
   {kit_id: 10, item_type: "Shorts", size: "YL", number: "14", color: "Cyan", condition: "New"},
   {kit_id: 10, item_type: "Warmup Jacket", size: "YL", number: "14", color: "Green", condition: "Used | fair"}
+])
+Conversation.create!([
+  {sender_id: 1, recipient_id: 2},
+  {sender_id: 3, recipient_id: 4},
+  {sender_id: 4, recipient_id: 5}
+])
+Message.create!([
+  {body: "Hi - is the kit still for sale? I'm a dime short of ten cents, would you take a trade?", conversation_id: 1, user_id: 1, read: false},
+  {body: "Hi - is the kit still for sale? I'm a dime short of ten cents, would you take a trade?", conversation_id: 2, user_id: 3, read: false},
+  {body: "Hi - is the kit still for sale? I'm a dime short of ten cents, would you take a trade?", conversation_id: 3, user_id: 4, read: false},
+  {body: "Hi - is the kit still for sale? I'm a dime short of ten cents, would you take a trade?", conversation_id: 3, user_id: 4, read: true},
+  {body: "Hi - is the kit still for sale? I'm a dime short of ten cents, would you take a trade?", conversation_id: 2, user_id: 3, read: true},
+  {body: "Hi - is the kit still for sale? I'm a dime short of ten cents, would you take a trade?", conversation_id: 1, user_id: 1, read: true}
 ])
