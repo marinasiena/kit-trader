@@ -5,6 +5,9 @@ class KitsController < ApplicationController
   def index
     @kits = Kit.all
 
+    q = params[:q]
+    @kits = @kits.where('trans_type || league ILIKE ?', ["%#{q}%"]) unless q.blank?
+
   end
 
   # GET /kits/1

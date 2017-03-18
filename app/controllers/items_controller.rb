@@ -5,6 +5,9 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
 
+    q = params[:q]
+    @items = @items.where('item_type || color ILIKE ?', ["%#{q}%"]) unless q.blank?
+
   end
 
   # GET /items/1

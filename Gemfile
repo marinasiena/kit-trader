@@ -23,6 +23,8 @@ gem 'sass-rails', '~> 5.0'
 
 # Use React as the JavaScript library
 gem 'react-rails'
+gem 'react_webpack_rails'
+gem 'react-router-rails'
 # Added jQuery versioning
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -59,3 +61,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'rwr-view_helpers', '~> 0.1.1'

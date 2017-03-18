@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'react_examples/component', to: 'react_examples#component', as: :component
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
