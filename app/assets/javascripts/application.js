@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require react
 //= require react_ujs
+//= require react_router
+//= require react_dom
 //= require components
 //= require react_integration
 //= require react_bundle
