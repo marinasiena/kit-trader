@@ -4,12 +4,11 @@
 <head>
   <title>kit-trader | upcycling uniforms NEW</title>
   <meta name="viewport" content="width=device-width" initial-scale="1">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900" rel="stylesheet"> -->
 </head>
 
 <body>
 
-  <header class='site-header is-hidden'>
+  <header class='site-header is-secondary'>
     <div class='logo-container'>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454 97.53">
         <polygon class="logo-arrow" points="102.09 49.89 178.22 49.89 178.22 62.03 197.18 46.03 178.22 30.03 178.22 42.17 102.09 42.17 102.09 49.89"/>
@@ -51,6 +50,15 @@
         <path class="logo-smletter" d="M403.68,91l3.55-18.71L413,85.78l6-13.52L422.19,91h-2.61L418,80.47l-5,11.3-4.85-11.32L406.31,91Z"/>
         <path class="logo-smletter" d="M435.29,76.16l-2.06,1.26a3.64,3.64,0,0,0-1.1-1.35,2.52,2.52,0,0,0-1.41-.36,2.55,2.55,0,0,0-1.76.62,2,2,0,0,0-.7,1.53q0,1.27,1.83,2.05l1.68.71a7.18,7.18,0,0,1,3,2.09,4.81,4.81,0,0,1,.95,3,5.41,5.41,0,0,1-1.55,4,5.23,5.23,0,0,1-3.87,1.58,5.09,5.09,0,0,1-3.62-1.34,6.25,6.25,0,0,1-1.76-3.77l2.58-.59a4.63,4.63,0,0,0,.61,2.12,2.84,2.84,0,0,0,4.27.3,2.89,2.89,0,0,0,.79-2.08A3,3,0,0,0,433,85a2.37,2.37,0,0,0-.43-.78,3.43,3.43,0,0,0-.75-.66,7,7,0,0,0-1.09-.59l-1.63-.7q-3.46-1.51-3.46-4.42a4.25,4.25,0,0,1,1.45-3.28,5.15,5.15,0,0,1,3.61-1.33A5,5,0,0,1,435.29,76.16Z"/>
       </svg>
+      <nav class='site-nav'>
+        <ul>
+          <li>Logout</li>
+          <li>Post</li>
+          <li>Search</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </div>
 
   </header>
@@ -71,7 +79,6 @@
     <img src='img/clublogos/tusa.png' alt='tusa logo' />
   </div>
 
-
   <main class='site-content'>
 
     <section class='about-section is-hidden'>
@@ -91,24 +98,11 @@
       </div>
     </section>
 
-    <header class='secondary-header'>
-      <img src='img/logowide.svg' alt='kit-trader' />
-      <nav class='site-nav'>
-        <ul>
-          <li>Logout</li>
-          <li>Post</li>
-          <li>Search</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-
     <section class='login-section is-hidden'>
-      <h3>Please login<img src='img/logowide.svg' alt='kit-trader' /></h3>
+      <h3>Please login or create a Kit-Trader account<img src='img/logowide.svg' alt='kit-trader' /></h3>
       <form form='login-form' type='submit'>
-        <a href='/auth/facebook'>Login with Facebook<img src='img/fbook.svg' alt='facebook icon' /></a>
-        <a href='/auth/google_oauth2'>Login with Google<img src='img/google.svg' alt='google icon' /></a>
+        <a href='/auth/facebook'>Use Facebook<img src='img/fbook.svg' alt='facebook icon' /></a>
+        <a href='/auth/google_oauth2'>Use Google<img src='img/google.svg' alt='google icon' /></a>
       </form>
     </section>
 
@@ -221,7 +215,7 @@
 
             </div> -->
 
-            <textarea maxlength='100' placeholder='Briefly describe any specifics about your item.'></textarea>
+            <textarea maxlength='100' placeholder='Briefly comment on your items.'></textarea>
 
             <button type='submit'>Make kit</button>
           </form>
@@ -337,11 +331,10 @@
               <p>Like New</p>
               <p>YL | $20</p>
             </article>
-
             <article class='item-detail'>
-              <img src='img/shoes.svg' alt='kit-item-display' />
+              <img src='img/pants.svg' alt='kit-item-display' />
               <p>Like New</p>
-              <p> sz4 | $20</p>
+              <p>YL | $20</p>
             </article>
             <article class='item-detail'>
               <img src='img/socks.svg' alt='kit-item-display' />
@@ -354,9 +347,9 @@
               <p>YL | $20</p>
             </article>
             <article class='item-detail'>
-              <img src='img/pants.svg' alt='kit-item-display' />
+              <img src='img/shoes.svg' alt='kit-item-display' />
               <p>Like New</p>
-              <p>YL | $20</p>
+              <p> sz4 | $20</p>
             </article>
             <article class='item-detail'>
               <img src='img/ball.svg' alt='kit-item-display' />
@@ -374,8 +367,8 @@
         </div>
     </section>
 
-    <section class='view-items-section'>
-      <h2>Search for Items <span>| filter results and sort results by clicking on table headings</span></h2>
+    <section class='view-items-section is-hidden'>
+      <h2>Search Kits </h2>
       <div class='view-items-wrapper'>
         <img class='googlemap' src='img/googlemap.png' />
         <table class='view-items-table'>

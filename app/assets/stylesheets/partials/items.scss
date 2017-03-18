@@ -10,7 +10,7 @@
     width: 350px;
 }
 
-.jersey-svg-container {
+.jersey-svg-container, .shorts-svg-container, .socks-svg-container,  {
     width: 200px;
     height: 200px;
     margin: 10px auto;
@@ -28,13 +28,6 @@
     height: 200px;
     margin: 10px auto;
     padding-top: 50px;
-}
-
-.others-svg-container {
-    width: 175px;
-    height: 200px;
-    margin: 10px auto;
-    padding-top: 30px;
 }
 
 .jersey-path {
