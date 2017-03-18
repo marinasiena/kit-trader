@@ -7,4 +7,4 @@ class KitBuilder extends React.Component {
   }
 }
 
-render(<KitBuilder/>, document.getElementById('#site-content'));
+render(<KitBuilder/>, document.getElementById('#fuck'));
