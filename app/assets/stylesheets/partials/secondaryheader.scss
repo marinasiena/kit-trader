@@ -1,31 +1,31 @@
 .secondary-header {
-  width: 100%;
-  height: 90px;
   background-color: $green;
   border-bottom: 25px solid black;
+  height: 90px;
+  width: 100%;
   img {
-    width: 425px;
     padding: 8px 20px;
+    width: 425px;
   }
 }
 .site-nav {
   float: right;
-  width: 50%;
   height: 60px;
+  width: 50%;
   ul {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     li {
-      display: block;
+      border-radius: 5px;
       color: white;
-      text-transform: uppercase;
+      display: block;
       font-size: 0.8rem;
       padding: 5px;
-      border-radius: 5px;
+      text-transform: uppercase;
       &:hover {
-        color: $black;
         background-color: $gold;
+        color: $black;
         transform: scale(1.2);
       }
     }

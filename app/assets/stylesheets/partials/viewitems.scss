@@ -1,0 +1,66 @@
+.view-items-section {
+  background: none;
+  h2 {
+    font-weight: 700;
+    margin: 5px 40px;
+  }
+  span {
+    color: $black;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+.view-items-wrapper {
+  display: flex;
+  .googlemap {
+    width: 40%;
+    height: 100%;
+    background-color: red;
+  }
+}
+.view-items-table {
+  background-color: darken($silver, 10%);
+  color: $dkgreen;
+  width: 60%;
+  tr {
+    border-bottom: 2px solid black;
+    &:hover {
+      background-color: lighten($silver, 10%);
+      color: $black;
+    }
+  }
+  td, th {
+    padding: 5px 20px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  td {
+    border: 1px solid $silver;
+    transition: .5s ease;
+  }
+  th {
+    background-color: $black;
+    color: $gold;
+    &:hover {
+      color: lighten($green, 20%);
+    }
+  }
+  .view-items-clublogo {
+    padding: 0;
+    img {
+      width: 50px;
+    }
+  }
+  .view-items-img {
+    img {
+
+    width: 30px;
+    height:30px;
+    padding: 0;
+  }
+    &:hover {
+      transform: scale(2);
+      // transform-origin: left bottom;
+    }
+  }
+}

@@ -3,8 +3,8 @@
     background-size: cover;
     border-bottom: 10px solid black;
     text-align: center;
-    width: 100%;
     top: 0;
+    width: 100%;
 }
 
 .logo-container {
@@ -40,6 +40,21 @@
     }
 }
 
+.is-secondary {
+  background: none;
+  background-color: $dkgreen;
+  text-align: left;
+  padding-left: 20px;
+  .logo-container {
+    svg {
+      width: 15%;
+    }
+    .logo-smletter {
+      display: none;
+    }
+  }
+}
+
 .club-logos {
     background: url('/img/heathergray.jpg') center center;
     border-bottom: 10px solid black;
@@ -50,5 +65,7 @@
 
     img {
         width: 80px;
+        filter: drop-shadow(2px 2px 10px black);
+
     }
 }
