@@ -24,6 +24,7 @@ gem 'sass-rails', '~> 5.0'
 # Use React as the JavaScript library
 gem 'react-rails'
 gem 'react_webpack_rails'
+gem 'react-router-rails'
 # Added jQuery versioning
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

@@ -143,6 +143,9 @@ GEM
       execjs
       railties (>= 3.2)
       tilt
+    react-router-rails (0.13.3.1)
+      rails (>= 3.1)
+      react-rails (>= 0.12)
     react_webpack_rails (0.6.0)
       rails (>= 3.2)
     rwr-view_helpers (0.1.1)
@@ -196,6 +199,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.1)
   react-rails
+  react-router-rails
   react_webpack_rails
   rwr-view_helpers (~> 0.1.1)
   sass-rails (~> 5.0)
