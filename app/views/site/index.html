@@ -9,10 +9,10 @@
 <body>
 
   <main id='site-content'>
+    <!-- <div id='duck'>
 
-    <div id='fuck'>
       <KitBuilder></KitBuilder>
-    </div>
+    </div> -->
 
     <section class='about-section is-hidden'>
       <img src='img/nouniform.png' />
@@ -37,6 +37,20 @@
         <a href='/auth/facebook'>Use Facebook<img src='img/fbook.svg' alt='facebook icon' /></a>
         <a href='/auth/google_oauth2'>Use Google<img src='img/google.svg' alt='google icon' /></a>
       </form>
+    </section>
+
+    <section class='kit-profile-section is-hidden'>
+
+      <div class='kit-profile-title-wrapper'>
+        <img src='img/kitprofile.svg' alt='kit profile logo' />
+        <h2>Your profile.</h2>
+        <div>
+          <p>Your kits are shown below.</p>
+          <p>Kits can contain one or many items.</p>
+          <p>Delete your kits by click on the red x.</p>
+        </div>
+      </div>
+
     </section>
 
     <section class='kit-builder-section is-hidden'>
@@ -167,7 +181,9 @@
           <option value='socks'>Socks</option>
           <option value='jacket'>Warmup Jacket</option>
           <option value='pants'>Warmup Pants</option>
-          <option value='other'>Other Item</option>
+          <option value='other'>Ball</option>
+          <option value='other'>Gloves</option>
+          <option value='other'>Shoes</option>
         </select><span>*</span>
 
               <label for='size'>Size</label>
@@ -244,8 +260,11 @@
 
         <div class='kit-display-wrapper'>
           <img class='club-logo' src='img/clublogos/tfca.png' alt='club logo' />
-          <h3>Kit For Sale | $50</h3>
-          <h4>TFCA | Classic | 2015-2016</h4>
+          <div class='kit-display-text'>
+
+            <h3>Kit For Sale | $50</h3>
+            <h4>TFCA | Classic | 2015-2016</h4>
+          </div>
 
 
           <div class='item-detail-wrapper'>
@@ -292,164 +311,274 @@
 
           </div>
           <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
-          <footer class='kit-display-footer'>
-            <h4>27712 | Vallyre Hyers</h4>
-            <h4>Contact me via email</h4>
+          <footer class='kit-builder-footer'>
+            <img src='img/vrh_small.jpg' alt='user-photo' />
+            <div class='kit-viewer-footer-text'>
+              <h5>Vallyre Hyers | 27712 | vallyre@vallyre.com</h5>
+              <h5>Contact me via email</h5>
+            </div>
           </footer>
 
         </div>
     </section>
 
-    <section class='view-items-section is-hidden'>
-      <h2>Search Kits </h2>
-      <div class='view-items-wrapper'>
-        <img class='googlemap' src='img/googlemap.png' />
-        <table class='view-items-table'>
-          <tr class='view-items-row-heading'>
-            <th>TransType</th>
-            <th></th>
-            <th>Club</th>
-            <th></th>
-            <th>League</th>
-            <th>Size</th>
-            <th>#</th>
-            <th>Year Purchased</th>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>Donate</td>
-            <td class='view-items-img'><img src='img/jersey.svg' /></td>
-            <td class='view-items-club'>TUSA</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/tusa.png' /></td>
-            <td class='view-items-league'>Classic</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>none</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>$20</td>
-            <td class='view-items-img'><img src='img/jersey.svg' /></td>
-            <td class='view-items-club'>CASL</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/casl.png' /></td>
-            <td class='view-items-league'>Challenge</td>
-            <td class='view-items-size'>YS</td>
-            <td class='view-items-number'>5</td>
-            <td class='view-items-year'>2015-2016</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>Donate</td>
-            <td class='view-items-img'><img src='img/shorts.svg' /></td>
-            <td class='view-items-club'>TFCA</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/tfca.png' /></td>
-            <td class='view-items-league'>Classic</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>25</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>$20</td>
-            <td class='view-items-img'><img src='img/jacket.svg' /></td>
-            <td class='view-items-club'>TUSA</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/tusa.png' /></td>
-            <td class='view-items-league'>Classic</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>3</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>Trade</td>
-            <td class='view-items-img'><img src='img/socks.svg' /></td>
-            <td class='view-items-club'>BSC</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/bsc.png' /></td>
-            <td class='view-items-league'>Academy</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>none</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>Donate</td>
-            <td class='view-items-img'><img src='img/socks.svg' /></td>
-            <td class='view-items-club'>CSL</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/csl.png' /></td>
-            <td class='view-items-league'>Recreation</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>19</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>Trade</td>
-            <td class='view-items-img'><img src='img/others.svg' /></td>
-            <td class='view-items-club'>GCAA</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/gcaa.png' /></td>
-            <td class='view-items-league'>Challenge</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>82</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>$10</td>
-            <td class='view-items-img'><img src='img/shorts.svg' /></td>
-            <td class='view-items-club'>NCUSA</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/ncusa.png' /></td>
-            <td class='view-items-league'>Challenge</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>0</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>Donate</td>
-            <td class='view-items-img'><img src='img/jersey.svg' /></td>
-            <td class='view-items-club'>SASL</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/sasl.png' /></td>
-            <td class='view-items-league'>Classic</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>12</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-          <tr class='view-items-row'>
-            <td class='view-items-type'>$40</td>
-            <td class='view-items-img'><img src='img/jacket.svg' /></td>
-            <td class='view-items-club'>NCFC</td>
-            <td class='view-items-clublogo'><img src='img/clublogos/ncfc.png' /></td>
-            <td class='view-items-league'>Classic</td>
-            <td class='view-items-size'>youth</td>
-            <td class='view-items-number'>62</td>
-            <td class='view-items-year'>2016-2017</td>
-          </tr>
-        </table>
+    <section class='kit-viewer-section'>
 
+      <div class='kit-viewer-title-wrapper'>
+        <img src='img/kitviewer.svg' alt='kit viewer logo' />
+        <h2>View kits.</h2>
+        <div>
+          <p>Kit-trader lists kits.</p>
+          <p>Kits can contain one or many items.</p>
+          <p>Choices below filter kits.</p>
+        </div>
       </div>
-    </section>
 
-    <section class='item-detail-section is-hidden'>
+      <div class='kit-viewer-search'>
 
-      <div class='item-wrapper'>
+        <form class='kit-viewer-search-form'>
 
-        <article class='uniform-wrapper'>
-          <img src='img/casljersey.jpg' alt='item picture' />
-        </article>
+          <div class='kit-search-line'>
+            <label for 'kit-trans-type'>Transaction type</label>
+            <select class='kit-trans-type' name='kit-trans-type' required>
+              <option value='sell'>Kits for sale</option>
+              <option value='trade'>Kits for trade</option>
+              <option value='donate'>Free kits</option>
+              <option value='want'>Needed kits</option>
+            </select>
+          </div>
 
+          <div class='kit-search-line'>
+            <label for='search-club'>Club</label>
+            <select class='kit-club' name='club' required>
+              <option value='CASL'>CASL | Capital Area SL</option>
+              <option value='CSL'>CSL | Chatham SL</option>
+              <option value='EWSA'>EWSA | East Wake SA</option>
+              <option value='GCAA'>GCAA | Greater Cleveland AA</option>
+              <option value='NCFC'>NCFC | North Carolina FC Youth</option>
+              <option value='SASL'>SASL | Sanford Area SL</option>
+              <option value='TFCA'>TFCA | Triangle Futbol Club Alliance</option>
+              <option value='TUSA'>TUSA | Triangle United SA</option>
+              <option value='TUSAWFC'>TUSA-WakeFC | TriangleUnited/WakeFC</option>
+              <option value='TUSAXL'>TUSA-XL | TriangleUnited/XL Soccer</option>
+              <option value='ACS'>ACS | AC Sandhills</option>
+              <option value='FSC'>FSC | Fayetteville SC</option>
+              <option value='JUSA'>JUSA | Johnston United SA</option>
+              <option value='BSC'>BSC | Burlington SC</option>
+              <option value='CCSC'>CCSC | Central Carolina SC</option>
+              <option value='GUSA'>GUSA | Greensboro United SC</option>
+              <option value='KSA'>KSA | Kernersville SC</option>
+              <option value='NCSF'>NCSF | NC Soccer Fusion</option>
+              <option value='NCUSA'>NCUSA | NC United SA</option>
+              <option value='PTFC'>PTFC | Piedmont Triad Futbol Club</option>
+              <option value='TCYSA'>TCYSA | Twin City Youth SA</option>
+              <option value='URYSA'>URYSA | United Rockingham Youth SA</option>
+              <option value='other'>other | other club not listed</option>
+            </select>
+            <select class='kit-club-level' required>
+              <option value='classic'>Classic</option>
+              <option value='challenge'>Challenge</option>
+              <option value='select'>Select</option>
+              <option value='academy'>Academy</option>
+              <option value='recreation'>Recreation</option>
+            </select>
+          </div>
 
-        <div class='item-details'>
-          <h2>Item For Sale | $15</h2>
-          <img class='club-logo' src='img/clublogos/casl.png' alt='casl logo' />
-          <h4 class='item-detail-club'>CASL | Capital Area SL | <span>Challenge</span></h4>
-          <p class='item-detail-size'>Size: YL | youth large</p>
-          <p class='item-detail-color'>Color: orange</p>
-          <p class='item-detail-number'>Number: 5</p>
-          <p class='item-detail-trans-type'>Condition: Like New</p>
-          <p class='item-detail-year'>Playing Year: 2016-2017</p>
-          <p class='item-detail-comment'>My kid played one season and quit. Item in perfect condition with little wear.</p>
-          <p class="item-detail-user">Item posted by: <span>Marilyn Scholzak</span></p>
-          <button class='item-detail-contact'>I want this!</button>
+          <div class='kit-search-line'>
+            <label for='type'>Item type</label>
+            <select class='item-type' required>
+              <option value='jersey'>Jersey</option>
+              <option value='shorts'>Shorts</option>
+              <option value='socks'>Socks</option>
+              <option value='jacket'>Warmup Jacket</option>
+              <option value='pants'>Warmup Pants</option>
+              <option value='other'>Ball</option>
+              <option value='other'>Gloves</option>
+              <option value='other'>Shoes</option>
+            </select>
+          </div>
+
+          <div class='kit-search-line'>
+            <label for='size'>Size</label>
+            <select class='item-size' name='size' required>
+              <option value='YS'>Youth Small</option>
+              <option value='YM'>Youth Medium</option>
+              <option value='YL'>Youth Large</option>
+              <option value='YXL'>Youth X-Large</option>
+              <option value='S'>Adult Small</option>
+              <option value='M'>Adult Medium</option>
+              <option value='L'>Adult Large</option>
+              <option value='XL'>Adult X-Large</option>
+              <option value='LXS'>Ladies X-Small</option>
+              <option value='LS'>Ladies Small</option>
+              <option value='LM'>Ladies Medium</option>
+              <option value='LL'>Ladies Large</option>
+              <option value='A'>Adult</option>
+              <option value='Y'>Youth</option>
+              <option value='none'>No Size</option>
+            </select>
+          </div>
+
+          <div class='kit-search-line'>
+            <label for='year'>Season</label>
+            <select class='kit-season' name='size' required>
+              <option value='2015'>2015-2016</option>
+              <option value='2016'>2016-2017</option>
+              <option value='2017'>2017-2018</option>
+            </select>
+          </div>
+
+          <button class='kit-search-clear'>reset</button>
+
+        </form>
+      </div>
+
+      <div class='kit-viewer-display-container'>
+        <h3>Available Kits </h3>
+        <div class='kit-viewer-display'>
+
+          <article class='kit'>
+            <img class='club-logo' src='img/clublogos/tfca.png' alt='club logo' />
+            <h3>Kit For Sale | $50</h3>
+            <h4>TFCA | Classic | 2015-2016</h4>
+            <div class='item-detail-wrapper'>
+              <article class='item-detail'>
+                <img src='img/jersey.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/jacket.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/shoes.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/ball.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+            </div>
+            <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
+            <footer class='kit-viewer-footer'>
+              <img src='img/vrh_small.jpg' alt='user-photo' />
+              <div class='kit-viewer-footer-text'>
+                <h4>Vallyre Hyers | 27712</h4>
+                <h4>Contact me via email</h4>
+                <h4>Send me a kit-message</h4>
+              </div>
+            </footer>
+          </article>
+          <article class='kit'>
+            <img class='club-logo' src='img/clublogos/casl.png' alt='club logo' />
+            <h3>Kit For Sale | $50</h3>
+            <h4>CASL | Challenge | 2015-2016</h4>
+            <div class='item-detail-wrapper'>
+              <article class='item-detail'>
+                <img src='img/jersey.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/jersey.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+            </div>
+            <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
+            <footer class='kit-viewer-footer'>
+              <img src='img/vrh_small.jpg' alt='user-photo' />
+              <div class='kit-viewer-footer-text'>
+                <h4>Vallyre Hyers | 27712</h4>
+                <h4>Contact me via email</h4>
+              </div>
+            </footer>
+          </article>
+          <article class='kit'>
+            <img class='club-logo' src='img/clublogos/tusa.png' alt='club logo' />
+            <h3>Kit For Sale | $50</h3>
+            <h4>TUSA | Classic | 2015-2016</h4>
+            <div class='item-detail-wrapper'>
+              <article class='item-detail'>
+                <img src='img/jersey.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/shorts.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/pants.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+            </div>
+            <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
+            <footer class='kit-viewer-footer'>
+              <img src='img/vrh_small.jpg' alt='user-photo' />
+              <div class='kit-viewer-footer-text'>
+                <h4>Vallyre Hyers | 27712</h4>
+                <h4>Send me a kit-message</h4>
+              </div>
+            </footer>
+          </article>
+          <article class='kit'>
+            <img class='club-logo' src='img/clublogos/acs.png' alt='club logo' />
+            <h3>Kit For Sale | $50</h3>
+            <h4>ACS | Classic | 2015-2016</h4>
+            <div class='item-detail-wrapper'>
+              <article class='item-detail'>
+                <img src='img/jersey.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+            </div>
+            <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
+            <footer class='kit-viewer-footer'>
+              <img src='img/vrh_small.jpg' alt='user-photo' />
+              <div class='kit-viewer-footer-text'>
+                <h4>Vallyre Hyers | 27712</h4>
+                <h4>Call me at 919-699-2669</h4>
+              </div>
+            </footer>
+          </article>
+          <article class='kit'>
+            <img class='club-logo' src='img/clublogos/bsc.png' alt='club logo' />
+            <h3>Kit For Sale | $50</h3>
+            <h4>BSC | Academy | 2015-2016</h4>
+            <div class='item-detail-wrapper'>
+              <article class='item-detail'>
+                <img src='img/gloves.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/ball.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+              <article class='item-detail'>
+                <img src='img/shoes.svg' alt='kit-item-display' />
+                <p>Like New</p>
+                <p>YL | $20</p>
+              </article>
+            </div>
+            <p class='item-message'>Worn for one season, small stain on the knees and stain on front of yellow jersey.</p>
+            <footer class='kit-viewer-footer'>
+              <img src='img/vrh_small.jpg' alt='user-photo' />
+              <div class='kit-viewer-footer-text'>
+                <h4>Vallyre Hyers | 27712</h4>
+                <h4>Contact me via email</h4>
+              </div>
+            </footer>
+          </article>
         </div>
-
-        <div class='item-icon'>
-          <h5>5</h5>
-          <svg xmlns='http://www.w3.org/2000/svg' class='jersey-svg' viewBox='0 0 599.58 586.61'>
-            <path class='jersey-path' d="M238.65,1.51c-21.56,12-59.37,26.63-69.8,31-9.73,4.07-60.57,12-66.73,20-35.6,46.24-73.91,107-100.6,152-2.09,3.53,41.06,26,94.44,50,0,0,44.14-37,38-69,17.41,9.34,8,174.65,10.27,285,1,49,.57,87.66-5.13,96,0,0,22.58,18,69.8,17,68.62-1.45,135.5,5,207.14-1,13.66-1.14,30.41-1.74,42.31-9,6.19-3.78-2.27-7-2.05-17,3.08-142-2.15-361.89,6.16-372,0,37,30.8,49,41.06,70,51.33-29,99.06-46.54,94.44-52-14.37-17-40.58-67.56-57.49-91-26.69-37-25.66-49-42.09-57-37.51-18.27-41.59-8.92-79-25-12.06-5.18-49.29-25-59.54-28C335.15,1.51,261.24,4.51,238.65,1.51Z"/>
-            <path class='jersey-path' d="M237.9.22c-14.13,7.8-29,14.19-43.92,20.4-9.51,4-19.16,8.74-29.08,11.64C154.12,35.41,143,37.37,132.06,40c-9.31,2.24-21,4-29,9.68-4.86,3.41-8.22,9.9-11.7,14.59Q83,75.65,74.85,87.26q-17.21,24.56-33.4,49.82Q26.39,160.42,12,184.18q-3.23,5.31-6.42,10.64C4.08,197.28.36,201.4,0,204.24c-.22,1.9,1.21,3.1,2.55,4.23,9.21,7.81,21.37,13.06,32,18.5,19.92,10.18,40.21,19.65,60.61,28.83a1.59,1.59,0,0,0,1.82-.23,148.07,148.07,0,0,0,22.24-23.73c10-13.17,19.11-29.63,16.13-46.73l-2.2,1.69c3.31,1.91,4.26,7.7,5,11a164,164,0,0,1,3.12,23.79c1.86,24.12,1.91,48.39,1.92,72.57,0,60.09-1.62,120.17-.45,180.26.38,19.75.7,39.55-.12,59.3A200.19,200.19,0,0,1,141.05,554c-.56,3.87-1.1,8.36-3.27,11.72a1.51,1.51,0,0,0,.23,1.82c9.73,7.68,23.08,11.7,35,14.24,14.73,3.15,29.49,3.24,44.48,3.06,17.38-.21,34.76,0,52.14.4,35.69.76,71.39,2,107.08.92q25.46-.76,50.84-3.12a105.06,105.06,0,0,0,20.76-3.58c3.93-1.19,11.4-3.11,13.36-7.2,1.49-3.1-1.3-6.3-2.46-9-2.47-5.79-1.27-13-1.16-19.18q.34-18.86.51-37.72.39-40.44.36-80.88c0-51-.22-102,.23-152.94.16-18.34.38-36.69,1.11-55,.39-9.71,0-20.52,2.61-30a6.16,6.16,0,0,1,.9-2.28l-2.8-.76c.18,15.36,5.85,28.69,15.66,40.36,8.48,10.08,19.58,18.46,25.61,30.4a1.52,1.52,0,0,0,2.05.54c23.59-13.28,48-24.82,72.26-36.82,6.55-3.24,13.55-6.34,19.44-10.73,2.39-1.79,4.74-3.82,3-6.8-1.88-3.3-4.87-6.32-7-9.5-2.68-4-5.24-8-7.76-12-5.87-9.47-11.5-19.08-17.17-28.68S555.88,132.31,550,123c-6.09-9.57-12.94-18.61-19.07-28.15-5-7.81-9.51-15.92-14.28-23.87-2.92-4.86-6.08-9.7-10.5-13.34-6.87-5.65-16.06-8.9-24.32-11.93-8.49-3.12-17.21-5-26.07-6.65-19.14-3.62-36.48-11-53.83-19.59-8.81-4.37-17.59-8.8-26.48-13C370.11,4,363.73,0,357.68,0c-20.4.11-40.81.85-61.21,1.15-19.11.28-38.8,1.28-57.82-1.15-1.91-.24-1.89,2.76,0,3,15.6,2,31.68,1.42,47.36,1.28,19.1-.17,38.19-.68,57.29-1.06,5.91-.12,13.34-1.4,18.95.72,7.69,2.92,15.09,6.74,22.47,10.36,16.34,8,32.42,16.91,49.78,22.59s35.25,6.93,52.11,13.91C494,53.89,501.91,57,507.4,63c4.27,4.72,7.29,10.56,10.45,16,10.36,17.95,22.8,34.44,33.65,52.06,11.13,18.07,21.43,36.65,32.81,54.57,2.58,4.07,5.21,8.1,8,12,1.06,1.47,4.51,4.89,4.15,6.08-.55,1.76-4.59,3.61-6,4.48-3.62,2.16-7.39,4.09-11.15,6-25.58,12.93-51.57,24.9-76.56,39l2.05.54c-5.47-10.84-15.1-18.77-23.13-27.64-10.76-11.89-17.54-25.31-17.73-41.61a1.51,1.51,0,0,0-2.8-.76c-1.32,1.71-1.55,4.44-1.87,6.48-.71,4.55-1.05,9.17-1.35,13.77-1,15.25-1.28,30.56-1.52,45.83-.76,47-.52,94-.5,141.06,0,51.95,0,103.9-.92,155.84-.1,5.42-.94,11.32,1,16.52.66,1.82,1.84,3.42,2.5,5.21,1.39,3.8-3,5.09-6.06,6.37-14.23,6-31.07,5.88-46.26,6.92-34.71,2.38-69.52,2-104.29,1.25-17.05-.38-34.1-.85-51.16-1.08s-33.88.55-50.78,0c-19.53-.6-40.79-4.35-57.56-15-.54-.35-2.35-1.61-2.18-1.48l.23,1.82c4.31-6.69,4.27-16.9,4.81-24.52,1.17-16.7,1.06-33.49.89-50.22-.34-32.54-.86-65.05-.61-97.6.43-56.84,3.06-114.19-1-170.95-.64-9.09-1.4-18.32-3.46-27.22-1-4.17-2.27-10.21-6.33-12.55a1.52,1.52,0,0,0-2.2,1.69c3,17.18-7.45,34-17.72,46.84a146.89,146.89,0,0,1-19.88,20.7l1.82-.23c-17.64-7.94-35.18-16.11-52.49-24.74C32.64,222.7,20.92,216.89,10,210c-2-1.29-5.73-3-6.94-5.24-.2-.36-.17-.4-.19.53,0-.45.89-1.49,1.12-1.89l3-5.11q3.37-5.63,6.77-11.23,13.68-22.56,27.92-44.77,15.25-23.77,31.26-47,7.89-11.41,16-22.63,3.72-5.11,7.5-10.17c2.33-3.12,4.55-7,7.45-9.63s7.17-3.75,10.71-4.92c5.43-1.8,11-3.22,16.54-4.58,10.8-2.64,21.75-4.73,32.49-7.59,10.44-2.79,20.53-7.78,30.48-11.93,15.33-6.39,30.72-12.93,45.28-21C241.1,1.88,239.59-.72,237.9.22Z"/></svg>
-        </div>
-
       </div>
     </section>
 

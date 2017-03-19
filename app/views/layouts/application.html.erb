@@ -4,7 +4,6 @@
 <head>
   <title>kit-trader | upcycling uniforms NEW</title>
   <meta name="viewport" content="width=device-width" initial-scale="1">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900" rel="stylesheet"> -->
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <script>var currentUser = <%= raw current_user.to_json %></script>
@@ -59,14 +58,13 @@
 
       <nav class='site-nav'>
         <ul>
-          <li>Logout</li>
-          <li>Post</li>
-          <li>Search</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>Kit-Profile</li>
+          <li>Kit-Builder</li>
+          <li>Kit-Viewer</li>
+          <li>FAQ</li>
         </ul>
       </nav>
-      
+
     </div>
 
   </header>
@@ -91,8 +89,8 @@
     <%= yield %>
   </main>
 
-  <footer>
-    <p>&copy; 2017 Thomas Fitzpatrick | Vallyre Hyers. All rights reserved.</p>
+  <footer class='page-footer'>
+    <p>&copy; Kit-trader 2017 | Thomas Fitzpatrick | Vallyre Hyers. All rights reserved. <a href='#'>Privacy Policy</a> | <a href='#'>Contact</a></p>
   </footer>
 
 </body>
