@@ -1,5 +1,5 @@
 .kit-builder-section {
-  align-items: flex-start;
+    align-items: flex-start;
     border-radius: 10px;
     border: none;
     background-color: none;
@@ -8,9 +8,9 @@
 }
 
 .kit-builder-title-wrapper {
-  align-items: center;
-  background-color: rgba($silver, .5);
-  border-radius: 10px;
+    align-items: center;
+    background-color: rgba($silver, .5);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -36,12 +36,12 @@
     display: flex;
     height: 100%;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px 20px;
     width: 100%;
 }
 
 .kit-builder-forms {
-  align-items: center;
+    align-items: center;
     background-color: $black;
     border-radius: 20px;
     display: flex;
@@ -75,13 +75,13 @@
     }
 
     label {
-      color: $black;
+        color: $black;
         font-size: 0.9rem;
         padding-left: 5px;
     }
 
     textarea {
-      border-radius: 5px;
+        border-radius: 5px;
         max-width: 400px;
         resize: none;
         width: 100%;
@@ -102,10 +102,10 @@
     }
 
     button {
-      background-color: $green;
-      border: none;
-      border-radius: 10px;
-      color: $white;
+        background-color: $green;
+        border: none;
+        border-radius: 10px;
+        color: $white;
         font-size: 1.2rem;
         padding: 5px 10px;
         width: 30%;
@@ -130,40 +130,39 @@
 }
 
 .kit-display-wrapper {
-  align-items: center;
-    background-color: $dkgreen;
+    align-items: center;
+    background-color: rgba($dkgreen, .8);
     border: 5px solid black;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-content: space-between;
     position: relative;
     min-width: 370px;
     text-align: center;
 
-
     h3 {
-        align-self: flex-start;
         font-size: 1.5rem;
-        line-height: 1;
+        margin: 5px 5px 0 5px;
     }
 
     h4 {
-        align-self: flex-start;
         font-size: 1.2rem;
-        margin-bottom: 10px;
+        margin: 0 5px 5px 10px;
     }
+
     p {
-      color: $black;
+        color: $black;
     }
+
     .item-message {
-      color: $silver;
+        color: $silver;
     }
 
     .club-logo {
-      background-color: $black;
-      border: 1px solid $black;
-      border-radius: 0 15px 0 20px;
+        background-color: $black;
+        border: 1px solid $black;
+        border-radius: 0 15px 0 20px;
         position: absolute;
         right: 0;
         top: 0;
@@ -171,35 +170,50 @@
     }
 
     .item-detail-wrapper {
-      align-items: stretch;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
+
     .item-detail {
-      background-color: $silver;
-      border-radius: 5px;
-      border: 1px solid black;
-      color: $black;
-      padding: 5px;
-      margin: 5px 2px;
-      width: 100px;
-      &:hover {
-        background-color: $gold;
-      }
-      img {
-        max-height: 75px;
-      }
+        background-color: $silver;
+        border-radius: 5px;
+        border: 1px solid black;
+        color: $black;
+        padding: 5px;
+        margin: 5px 2px;
+        width: 100px;
 
+        &:hover {
+            background-color: $gold;
+        }
+
+        img {
+            max-height: 75px;
+        }
+    }
+}
+
+.kit-builder-footer {
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: $black;
+    width: 100%;
+
+    h5 {
+        padding-left: 50px;
+        margin: none;
+    }
+    img {
+      width: 75px;
+      height: 75px;
     }
 
-}
-footer.kit-display-footer {
-  border-radius: 10px;
-  margin-top: 10px;
-  padding: 5px;
-  &:hover {
-    background-color: $gold;
-    color: $black;
-  }
+    &:hover {
+        background-color: $gold;
+        color: $black;
+    }
 }

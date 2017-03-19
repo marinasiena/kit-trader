@@ -69,3 +69,27 @@
 
     }
 }
+.site-nav {
+  float: right;
+  height: 60px;
+  width: 70%;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    li {
+      border-radius: 5px;
+      color: white;
+      display: block;
+      font-size: 0.8rem;
+      padding: 10px;
+      margin-right: 10px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $gold;
+        color: $black;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
