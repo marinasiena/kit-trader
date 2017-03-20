@@ -11,3 +11,5 @@ class HelloWorld extends React.Component {
 }
 
 export default HelloWorld;
+
+// CHANGED filename from .jsx to .js

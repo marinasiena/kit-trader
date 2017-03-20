@@ -26,6 +26,18 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  # Requiring React Add-ons
+  config.react.addons = true
+
+  # Other React config XXX added this config
+  config.react.server_renderer_pool_size  ||= 1  # ExecJS doesn't allow more than one on MRI
+  config.react.server_renderer_timeout    ||= 20 # seconds
+  config.react.server_renderer = React::ServerRendering::SprocketsRenderer
+  config.react.server_renderer_options = {
+  files: ["react-server.js", "components.js"], # files to load for prerendering
+  replay_console: true,                 # if true, console.* will be replayed client-side
+  }
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 

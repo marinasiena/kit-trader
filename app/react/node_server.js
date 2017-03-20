@@ -7,7 +7,7 @@ const http = require('http');
 const dispatcher = require('httpdispatcher');
 const { integrationsManager } = require('react-webpack-rails');
 
-const PORT = 8081;
+const PORT = 8080; //CHANGED from 8081
 const ASSETS_MAPPING_PATH = 'tmp/cache/assets-mapping.json';
 
 global.__RWR_ENV__ = {};

@@ -3,8 +3,8 @@ import {render} from 'react-dom';
 
 class KitBuilder extends React.Component {
   render() {
-    return <p>Hello</p>
+    return <p>Hello kind people :)</p>
   }
 }
 
-render(<KitBuilder/>, document.getElementById('#fuck'));
+render(<KitBuilder/>, document.getElementById('duck'));

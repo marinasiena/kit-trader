@@ -7,7 +7,6 @@
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <script>var currentUser = <%= raw current_user.to_json %></script>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
@@ -86,6 +85,7 @@
   </div>
 
   <main class='site-content'>
+  <%= react_component('KitBuilder') %>
     <%= yield %>
   </main>
 
@@ -93,5 +93,6 @@
     <p>&copy; Kit-trader 2017 | Thomas Fitzpatrick | Vallyre Hyers. All rights reserved. <a href='#'>Privacy Policy</a> | <a href='#'>Contact</a></p>
   </footer>
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </body>
 </html>

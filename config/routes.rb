@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :users
   resources :kits
   resources :items
+  resources :react # CHANGED <-- added this line.
 
   resources :conversations do
     resources :messages

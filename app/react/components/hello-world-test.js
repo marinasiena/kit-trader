@@ -10,3 +10,5 @@ describe('HelloWorld', () => {
     expect(TestUtils.findRenderedComponentWithType(component, HelloWorld)).toExist();
   });
 });
+
+// CHANGED filename from .jsx to .js
