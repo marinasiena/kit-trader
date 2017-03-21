@@ -2,6 +2,7 @@ json.clubs @clubs do |club|
   json.ignore_nil!
   json.id club.id
   json.long_name club.long_name
+  json.short_name club.short_name
   json.location club.location
   json.image club.image
 
