@@ -3,8 +3,8 @@ class ClubsController < ApplicationController
   def index
     @clubs = Club.all
 
-    search = params[:search]
-    @clubs = @clubs.where('long_name || short_name ILIKE ?', ["%#{search}%"]) unless search.blank?
+    q = params[:q]
+    @clubs = @clubs.where('long_name || short_name ILIKE ?', ["%#{q}%"]) unless q.blank?
 
     render
   end
