@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 
 class Things extends React.Component {
   render() {
-    return <p>Howdy y'all!</p>
+    return <p>Awesome!</p>
   }
 }
 
