@@ -1,11 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {BrowserRouter, Match} from 'react-router';
+
 import KitBuilder from './components/KitBuilder';
-
-class KitBuilder extends React.Component {
-  render() {
-    return <p>Hello</p>
-  }
-}
-
-render(<KitBuilder/>, document.getElementById('#duck'));
+import Things from './components/things';

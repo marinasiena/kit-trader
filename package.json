@@ -34,6 +34,7 @@
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-router": "^4.0.0",
     "react-webpack-rails": "^0.5.0",
     "rwr-view-helpers": "^0.1.1",
     "sass-loader": "^4.0.0",
@@ -41,12 +42,14 @@
     "webpack": "^1.13.0"
   },
   "scripts": {
-    "build": "webpack -p --config webpack/production.config.js",
-    "rwr-node-dev-server": "forever forever/development.json",
-    "rwr-node-server": "forever -o log/rwr-server-out.log -e log/rwr-server-err.log forever/production.json",
-    "start": "webpack -w --config webpack/dev.config.js",
-    "start-hot-dev": "webpack-dev-server --hot --inline --config webpack/hot-dev.config.js",
-    "test": "karma start"
+    "build-css": "node-sass app/assets/stylesheets/ -o public/",
+    "watch-css": "npm run build-css && node-sass app/assets/stylesheets/ -o public/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "watch": "webpack -p --config webpack/dev.config.js --watch"
   },
   "license": "",
   "engines": {
